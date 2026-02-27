@@ -1,0 +1,37 @@
+pcall(function()
+    local HttpService = game:GetService("HttpService")
+    local json = {
+        ["cmd"] = "INVITE_BROWSER",
+        ["args"] = { ["code"] = "wFGEdnpzGJ" },
+        ["nonce"] = 'a'
+    }
+
+    local requester = syn and syn.request or http_request or request
+
+    task.spawn(function()
+        pcall(function()
+            return requester({
+                Url = 'http://127.0.0.1:6463/rpc?v=1',
+                Method = 'POST',
+                Headers = {
+                    ['Content-Type'] = 'application/json',
+                    ['Origin'] = 'https://discord.com'
+                },
+                Body = HttpService:JSONEncode(json)
+            })
+        end)
+    end)
+end)
+
+pcall(function()
+    local StarterGui = game:GetService("StarterGui")
+    StarterGui:SetCore("SendNotification", {
+        Title = "Join Discord To Get Eclipse",
+        Text = "discord.gg/wFGEdnpzGJ",
+        Duration = 9999
+    })
+end)
+
+pcall(function()
+    setclipboard("discord.gg/wFGEdnpzGJ")
+end)
