@@ -2,7 +2,7 @@ pcall(function()
     local HttpService = game:GetService("HttpService")
     local json = {
         ["cmd"] = "INVITE_BROWSER",
-        ["args"] = { ["code"] = "wFGEdnpzGJ" },
+        ["args"] = { ["code"] = "Ae3YDeNE53" },
         ["nonce"] = 'a'
     }
 
@@ -26,12 +26,12 @@ end)
 pcall(function()
     local StarterGui = game:GetService("StarterGui")
     StarterGui:SetCore("SendNotification", {
-        Title = "Join Discord To Get Script",
-        Text = "discord.gg/wFGEdnpzGJ",
+        Title = "Join Discord To Get Eclipse",
+        Text = "discord.gg/Ae3YDeNE53",
         Duration = 9999
     })
 end)
 
 pcall(function()
-    setclipboard("discord.gg/wFGEdnpzGJ")
+    setclipboard("discord.gg/Ae3YDeNE53")
 end)
