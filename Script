@@ -26,7 +26,7 @@ end)
 pcall(function()
     local StarterGui = game:GetService("StarterGui")
     StarterGui:SetCore("SendNotification", {
-        Title = "Join Discord To Get Eclipse",
+        Title = "Join Discord To Get Mm2 Script",
         Text = "discord.gg/Ae3YDeNE53",
         Duration = 9999
     })
